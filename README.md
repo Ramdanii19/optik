@@ -1,5 +1,31 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Struktur Project
+
+Folder utama aplikasi berada di `src/`:
+
+| Folder | Tanggung jawab |
+| --- | --- |
+| `src/app` | Routing, halaman, layout, dan konfigurasi global Next.js App Router. |
+| `src/components/custom-ui` | Komponen UI khusus yang memiliki perilaku atau tampilan spesifik aplikasi. |
+| `src/components/layouts` | Komponen layout reusable seperti header, sidebar, dan footer. |
+| `src/components/ui` | Komponen UI reusable dasar seperti button, modal, dan input. |
+| `src/config` | Konfigurasi aplikasi seperti environment, endpoint, dan pengaturan global. |
+| `src/features` | Modul fitur beserta komponen dan hooks yang hanya digunakan oleh fitur tersebut. |
+| `src/features/dashboard/components` | Komponen khusus halaman dashboard. |
+| `src/features/dashboard/hooks` | Hooks khusus untuk fitur dashboard. |
+| `src/hooks` | Hooks reusable yang digunakan lintas fitur. |
+| `src/lib` | Integrasi dan helper library pihak ketiga atau infrastruktur aplikasi. |
+| `src/services` | Service untuk komunikasi dengan API atau sumber data eksternal. |
+| `src/shared/constants` | Nilai konstan yang digunakan lintas fitur. |
+| `src/shared/service` | Shared service atau logika data yang digunakan lintas fitur. |
+| `src/shared/state` | State global atau store bersama. |
+| `src/shared/utils` | Utility reusable yang digunakan lintas fitur. |
+| `src/types` | Tipe dan interface global TypeScript. |
+| `src/utils` | Fungsi utilitas umum aplikasi. |
+
+Folder yang saat ini masih kosong menggunakan `.gitkeep` agar struktur tetap tercatat oleh Git.
+
 ## Getting Started
 
 First, run the development server:
